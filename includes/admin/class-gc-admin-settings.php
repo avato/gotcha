@@ -28,11 +28,22 @@ if ( ! class_exists( 'GC_Admin_Settings' ) ) :
 	    }
 
 
+	    public static function save(){
+
+	    }
+
 
 	    /**
 	    * Include the settings page classes
 	    */
 	    public static function get_settings_pages() {
+
+
+	    	if ( ! empty( $_POST ) ) {
+				self::save();
+			}
+
+
 	    	$manage_page =  gc_start_class('Admin_Page_Manager');
 	    	include_once( 'template/html-gc-settings-page.php' );
 	    }
