@@ -1,0 +1,516 @@
+/* ======================= [01] LAYOUT STYLES ======================= */
+/* ======================= [02] HEADER STYLES ======================= */
+/* ======================= [03] NAVIGATION STYLES =================== */
+/* ======================= [04] MAIN SECTION STYLES ================= */
+/* ======================= [05] PANEL STYLES ======================== */
+/* ======================= [06] BUTTON STYLES ======================= */
+/* ======================= [07] WHMCS PRESS BRANDING ================ */
+
+
+
+/* ======================= [01] LAYOUT STYLES ======================= */
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+#gc-dashboard-wrapper{
+	margin-left: -20px;
+}
+
+.users_page_gotcha-settings{
+	background: #f1f4f5;
+}
+
+.users_page_gotcha-settings #wpfooter{
+    background: #2A363B;
+    color: #fff;
+    margin-left: 200px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.users_page_gotcha-settings.folded #wpfooter{
+    margin-left: 70px;
+}
+
+.users_page_gotcha-settings #wpfooter p{
+    padding: 5px;
+}
+
+.users_page_gotcha-settings #wpfooter p a{
+	color: #F2A654;;
+}
+
+.gc-span-3{
+	float       : left;
+	width       : 24%;
+	margin-right: 1.3%;
+}
+
+.gc-span-6{
+	float       : left;
+	width       : 49%;
+	margin-right: 1.5%;
+}
+
+.gc-column{
+	position     : relative;
+	box-sizing   : border-box;
+	margin-bottom: 20px;
+}
+
+.gc-last-column{
+	margin-right: 0;
+}
+
+
+.gc-color-branding{
+	background: #f2a654;
+	color     : #fff;
+}
+
+.gc-color-red{
+	background: #F14F4F;
+	color     : #fff;
+}
+
+.gc-color-green{
+	background : #61C17D;
+	color      : #fff;
+}
+
+.gc-color-dark{
+	background : #2A363B;
+	color      : #fff;
+}
+
+.gc-color-grey{
+	background : #9e9e9e;
+	color      : #fff;
+}
+
+
+
+
+
+
+/* ======================= [02] HEADER STYLES ======================= */
+
+.gc-page-title{
+	padding: 40px 40px 10px 40px;
+}
+
+.gc-page-title h2{
+	display    : inline-block;
+	font-size  : 44px;
+	font-weight: 200;
+	padding    : 0;
+	margin     : 13px 0;
+	color      : #37474f;
+}
+
+
+
+
+/* ======================= [04] MAIN SECTION STYLES ================= */
+
+.gc-page-body{
+	padding    : 40px;
+	padding-top: 0;
+}
+
+
+/* ======================= [05] PANEL STYLES ======================== */
+
+/* === PANEL OUTER == */
+.gc-panel{
+	background           : #fff;
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	border               : 1px solid #e7ecee;
+}
+
+.gc-grey-panel{
+	background: #c0c0c0;
+}
+
+
+/* === PANEL HEADER == */
+.gc-panel-header{
+	padding      : 20px 20px 10px;
+}
+
+
+.gc-panel-header h5{
+	padding    : 0;
+	font-weight: 400;
+	font-size  : 17px;
+	margin     : 0;
+	color      : #37474f;
+}
+
+.gc-grey-panel h5{
+	color: #fff;
+}
+
+/* === PANEL BODY == */
+.gc-panel-body{
+	padding    : 20px 20px 0 ;
+	padding-top: 5px;
+	position   : relative;
+}
+
+
+/* === PANEL FOOTER == */
+.gc-panel-footer{
+	padding   : 20px 20px 20px;
+	text-align: center;
+}
+
+
+/* === PANEL MESSAGES === */
+.hk-update-message{
+	text-align    : center;
+	font-weight   : 200;
+	padding       : 20px 0;
+	text-transform: uppercase;
+	position      : absolute;
+	left          : 0;
+	width         : 100%;
+	bottom        : 0;
+	display       : none;
+}
+
+
+/* === PANEL INPUTS === */
+.gc-panel label{
+	font-size: 14px;
+	color: #76838f;
+	display: block;
+	font-weight: 400;
+}
+
+.gc-panel input[type=text]{
+	background        : #f3f7f9;
+	width             : 100%;
+	-webkit-box-shadow: none;
+	box-shadow        : none;
+	font-weight       : 200;
+	border            : 1px solid #e8eff3;
+}
+
+.gc-panel select{
+	background           : #f3f7f9;
+	width                : 100%;
+	-webkit-box-shadow   : none;
+	box-shadow           : none;
+	font-weight          : 200;
+	border               : 1px solid #e8eff3;
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+}
+
+.gc-panel select:focus,
+.gc-panel input[type=text]:focus{
+	border: 1px solid #F2A654;
+}
+
+.gc-panel input[type=text]::-webkit-input-placeholder {
+   color: #999;
+}
+
+.gc-panel input[type=text]:-moz-placeholder { /* Firefox 18- */
+    color: #999; 
+}
+
+.gc-panel input[type=text]::-moz-placeholder {  /* Firefox 19+ */
+    color: #999; 
+}
+
+.gc-panel input[type=text]:-ms-input-placeholder {  
+    color: #999; 
+}
+
+
+.hk-checkbox{
+	display: block;
+	position: relative;
+}
+
+.hk-checkbox label{
+	float: right;
+	margin-left: 25%;
+	text-align: left;
+	width: 75%;
+}
+
+.hk-checkbox input[type=checkbox]{
+	position: absolute;
+	top: 2px;
+	left: 0;
+	z-index: 2;
+	width: 20%;
+	height: 25px;
+	opacity: 0;
+
+}
+
+.hk-checkbox .holderspan{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 20%;
+	height: 25px;
+	-webkit-border-radius: 25px;
+	border-radius        : 25px;
+	background: #F3F7F9;
+	z-index: 1;
+}
+
+.hk-checkbox input[type=checkbox]:checked + .holderspan{
+   background: #46be8a;
+   -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.hk-checkbox .holderspan::before{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	-webkit-border-radius: 25px;
+	border-radius        : 25px;
+	background: #fff;
+	content: '';
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.hk-checkbox input[type=checkbox]:checked + .holderspan::before{
+   left: 55%;
+}
+
+.gc-grey-panel .hk-checkbox label{
+	color: #fff;
+}
+
+
+
+
+/* ======================= [06] BUTTON STYLES ======================= */
+
+
+.gc-button{
+	text-transform       : uppercase;
+	padding              : 6px 20px;
+	font-size            : 12px;
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	cursor               : pointer;
+}
+
+.gc-button.gc-color-branding:hover{
+	background: #2A363B;
+	color     : #F2A654;
+}
+
+.gc-button.hk-color-grey:hover{
+	background: #111;
+	color     : #A3AFB7;
+}
+
+.gc-button span.icon-gc-cog{
+	margin-right  : 10px;
+	display       : inline-block;
+	display       : none;
+	text-align    : center;
+	vertical-align: center;
+	position      : relative;
+}
+
+@-webkit-keyframes gc-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes gc-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.gc-spin {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    -webkit-animation: gc-spin 2s infinite linear;
+    animation: gc-spin 2s infinite linear;
+    vertical-align: middle;
+    display: none;
+}
+
+
+
+/* ======================= [07] WHMCS PRESS BRANDING ================ */
+
+.gc-page-title .gc-logo{
+	display              : inline-block;
+	margin-right         : 20px;
+	height               : 44px;
+	width                : 44px;
+	text-indent          : -999999px;
+	vertical-align       : top;
+	-webkit-border-radius: 5px;
+	border-radius        : 5px;
+	border               : 1px solid rgba(0,0,0,0.1);
+	position             : relative;
+}
+
+.gc-page-title .gc-logo:before{
+	position                 : absolute;
+	top                      : 0;
+	left                     : 0;
+	width                    : 44px;
+	line-height              : 44px;
+	font-size                : 24px;
+	height                   : 44px;
+	text-indent              : 0;
+	content                  : "\e600";
+	font-family              : 'hostkit';
+	text-align               : center;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing   : antialiased;
+	-moz-osx-font-smoothing  : grayscale;
+}
+
+.gc-gotcha-panel{
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	border               : 1px solid rgba(0,0,0,0.1);
+	margin-bottom        : 20px;
+	text-align           : center;
+	padding-bottom       : 20px;
+	padding-top          : 20px;
+}
+
+
+.gc-gotcha-panel .gc-gotcha-links{
+	text-align: center;
+	padding: 5px 0;
+	width: 50%;
+	text-align: center;
+	margin: 10px 0;
+	background: #fff;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #7C1240;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+
+.gc-gotcha-panel h6{
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-weight: 200;
+	font-family: 'Chewy';
+	text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.gc-github-panel{
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	border               : 1px solid rgba(0,0,0,0.1);
+	margin-bottom        : 20px;
+	padding-bottom       : 20px;
+	text-align: center;
+}
+
+.gc-github-panel a.gc-logo{
+	display      : block;
+	margin-top   : 20px;
+	height       : 64px;
+	text-indent  : -999999px;
+	position     : relative;
+	color        : #fff;
+	margin-bottom: 10px;
+}
+
+.gc-github-panel a.gc-logo:before{
+	position                 : absolute;
+	top                      : 0;
+	left                     : 0;
+	width                    : 100%;
+	line-height              : 50px;
+	font-size                : 48px;
+	height                   : 64px;
+	text-align               : center;
+	background               : url(images/GitHub-Mark-Light-64px.png) no-repeat center;
+	content                  :'';
+}
+
+.gc-github-panel h6{
+	text-align: center;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-weight: 200;
+}
+
+.gc-github-panel .gc-github-links{
+	text-align: center;
+	padding: 5px 0;
+	width: 50%;
+	text-align: center;
+	margin: 10px 0;
+	background: #fff;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #666;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
