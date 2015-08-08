@@ -134,7 +134,6 @@
 /* === PANEL OUTER == */
 .gc-panel{
 	background           : #fff;
-	-webkit-border-radius: 3px;
 	border-radius        : 3px;
 	border               : 1px solid #e7ecee;
 }
@@ -202,7 +201,6 @@
 .gc-panel input[type=text]{
 	background        : #f3f7f9;
 	width             : 100%;
-	-webkit-box-shadow: none;
 	box-shadow        : none;
 	font-weight       : 200;
 	border            : 1px solid #e8eff3;
@@ -211,11 +209,9 @@
 .gc-panel select{
 	background           : #f3f7f9;
 	width                : 100%;
-	-webkit-box-shadow   : none;
 	box-shadow           : none;
 	font-weight          : 200;
 	border               : 1px solid #e8eff3;
-	-webkit-border-radius: 3px;
 	border-radius        : 3px;
 }
 
@@ -270,7 +266,6 @@
 	left: 0;
 	width: 20%;
 	height: 25px;
-	-webkit-border-radius: 25px;
 	border-radius        : 25px;
 	background: #F3F7F9;
 	z-index: 1;
@@ -278,10 +273,7 @@
 
 .hk-checkbox input[type=checkbox]:checked + .holderspan{
    background: #46be8a;
-   -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+   transition: all .4s ease-in-out;
 }
 
 .hk-checkbox .holderspan::before{
@@ -290,15 +282,10 @@
 	left: 0;
 	width: 25px;
 	height: 25px;
-	-webkit-border-radius: 25px;
 	border-radius        : 25px;
 	background: #fff;
 	content: '';
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     transition: all .2s ease-in-out;
 }
 
@@ -320,7 +307,6 @@
 	text-transform       : uppercase;
 	padding              : 6px 20px;
 	font-size            : 12px;
-	-webkit-border-radius: 3px;
 	border-radius        : 3px;
 	cursor               : pointer;
 }
@@ -379,6 +365,23 @@
 }
 
 
+.gc-savebar{
+	background: rgba(0,0,0,0.7);
+	padding: 10px 0;
+	position: fixed;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+}
+
+.gc-savebar input[type="submit"]{
+	border: none;
+	border-radius: 3px;
+}
+
+
 
 /* ======================= [07] WHMCS PRESS BRANDING ================ */
 
@@ -389,7 +392,6 @@
 	width                : 44px;
 	text-indent          : -999999px;
 	vertical-align       : top;
-	-webkit-border-radius: 5px;
 	border-radius        : 5px;
 	border               : 1px solid rgba(0,0,0,0.1);
 	position             : relative;
@@ -413,7 +415,6 @@
 }
 
 .gc-gotcha-panel{
-	-webkit-border-radius: 3px;
 	border-radius        : 3px;
 	border               : 1px solid rgba(0,0,0,0.1);
 	margin-bottom        : 20px;
@@ -434,7 +435,6 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #7C1240;
-	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -458,7 +458,6 @@
 }
 
 .gc-github-panel{
-	-webkit-border-radius: 3px;
 	border-radius        : 3px;
 	border               : 1px solid rgba(0,0,0,0.1);
 	margin-bottom        : 20px;
@@ -509,7 +508,6 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #666;
-	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
 

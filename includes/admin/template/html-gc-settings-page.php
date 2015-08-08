@@ -128,7 +128,7 @@ for ($i=0; $i < 11 ; $i++) {
             </div>
 
             <div class="gc-savebar">
-            	<input type="submit" name="gc-form-submit" value="<?php _e('Save your work','gc'); ?>" />
+            	<input type="submit" class="gc-color-branding" name="gc-form-submit" value="<?php _e('Save your work','gc'); ?>" />
             </div>
 
         </form>
