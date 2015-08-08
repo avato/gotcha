@@ -41,6 +41,8 @@ for ($i=0; $i < 11 ; $i++) {
     <main class="gc-page-body cf">
         <form action="" enctype="multipart/form-data" id="mainform" method="post" name="mainform">
 
+        	<?php wp_nonce_field( 'gc-admin-actions', "gc-security"); ?>
+
             <div class="gc-span-3 gc-column">
 
                 <div class="gc-panel gc-popup mask gc-ajax-parent">
@@ -51,7 +53,10 @@ for ($i=0; $i < 11 ; $i++) {
 
 
                     <div class="gc-panel-body">
-                        <?php echo $set_page->set_select('mask-opacity',__('Opacity','gotcha'), $option_1_args); ?><?php echo $set_page->set_color('mask-color',__('Mask color','gotcha') ); ?>
+                        <?php echo $set_page->set_select('mask-opacity',__('Opacity','gotcha'), $option_1_args); ?>
+
+                        <?php echo $set_page->set_color('mask-color',__('Mask color','gotcha') ); ?>
+
                     </div>
 
                 </div><!-- .hk-api-settings-panel -->
@@ -70,7 +75,11 @@ for ($i=0; $i < 11 ; $i++) {
 
 
                     <div class="gc-panel-body">
-                        <?php echo $set_page->set_check('show-register',__('Show Registration','gotcha') ); ?><?php echo $set_page->set_check('show-login',__('Show Login','gotcha') ); ?>
+
+                        <?php echo $set_page->set_check('show-register',__('Show Registration','gotcha') ); ?>
+
+                        <?php echo $set_page->set_check('show-login',__('Show Login','gotcha') ); ?>
+                        
                     </div>
                 </div>
                 <!-- .hk-api-settings-panel -->
