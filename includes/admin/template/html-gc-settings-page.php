@@ -54,14 +54,6 @@ for ($i=0; $i < 11 ; $i++) {
                         <?php echo $set_page->set_select('mask-opacity',__('Opacity','gotcha'), $option_1_args); ?><?php echo $set_page->set_color('mask-color',__('Mask color','gotcha') ); ?>
                     </div>
 
-
-					<!-- Panel Footer -->
-                    <div class="gc-panel-footer">
-                        <a class=
-                        "gc-spinner gc-ajax-task gc-color-branding gc-button"
-                        data-action="gc-save-mask"><span class=
-                        "dashicons dashicons-update gc-spin"></span></a>
-                    </div>
                 </div><!-- .hk-api-settings-panel -->
             </div><!-- .hk-span-3 -->
 
