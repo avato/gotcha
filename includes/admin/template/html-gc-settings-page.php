@@ -79,7 +79,7 @@ for ($i=0; $i < 11 ; $i++) {
                         <?php echo $set_page->set_check('show-register',__('Show Registration','gotcha') ); ?>
 
                         <?php echo $set_page->set_check('show-login',__('Show Login','gotcha') ); ?>
-                        
+
                     </div>
                 </div>
                 <!-- .hk-api-settings-panel -->
@@ -126,7 +126,14 @@ for ($i=0; $i < 11 ; $i++) {
                     "http://gotcha.ava.to">Report a bug</a><br>
                 </div>
             </div>
+
+            <div class="gc-savebar">
+            	<input type="submit" name="gc-form-submit" value="<?php _e('Save your work','gc'); ?>" />
+            </div>
+
         </form>
     </main>
+
+
 </section>
 <!-- #hk-dashboard-wrapper -->
