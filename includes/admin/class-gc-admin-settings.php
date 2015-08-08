@@ -45,7 +45,7 @@ if ( ! class_exists( 'GC_Admin_Settings' ) ) :
 
 	    	flush_rewrite_rules();
 
-	    	update_option( 'Gotcha', $settings,  );
+	    	update_option( 'Gotcha', $settings );
 	    }
 
 
