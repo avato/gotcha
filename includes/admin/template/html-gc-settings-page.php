@@ -26,6 +26,7 @@ for ($i=0; $i < 11 ; $i++) {
     <header class="gc-page-title">
         <h2 class="gc-heading" id="gc-options-header">
         <?php _e('Dashboard','gotcha'); ?>
+        <?php echo (get_option('savetest'));  ?>
         </h2>
     </header>
     <!-- .hk-page-title -->
@@ -39,7 +40,7 @@ for ($i=0; $i < 11 ; $i++) {
 
 
     <main class="gc-page-body cf">
-        <form action="" enctype="multipart/form-data" id="mainform" method="post" name="mainform">
+        <form action="" enctype="multipart/form-data" id="gc-mainform" method="post" name="mainform">
 
         	<?php wp_nonce_field( 'gc-admin-actions', "gc-security"); ?>
 
@@ -92,13 +93,16 @@ for ($i=0; $i < 11 ; $i++) {
 
                 <div class="gc-panel">
                     <div class="gc-panel-header">
-                        <h5><?php _e('System Status','gotcha'); ?>
-                        </h5>
+                        <h5><?php _e('Form Colors','gotcha'); ?></h5>
                     </div>
 
 
                     <div class="gc-panel-body">
-                        status settings
+                       <?php echo $set_page->set_color('form-bg',__('Form Bg color','gotcha') ); ?>
+                       <?php echo $set_page->set_color('label-col',__('Label color','gotcha') ); ?>
+                       <?php echo $set_page->set_color('subm-bg',__('Submit Bg','gotcha') ); ?>
+                       <?php echo $set_page->set_color('subm-col',__('Submit color','gotcha') ); ?>
+                       <br/>
                     </div>
                 </div>
                 <!-- .hk-api-settings-panel -->
@@ -128,7 +132,7 @@ for ($i=0; $i < 11 ; $i++) {
             </div>
 
             <div class="gc-savebar">
-            	<input type="submit" class="gc-color-branding" name="gc-form-submit" value="<?php _e('Save your work','gc'); ?>" />
+            	<input type="submit" class="gc-color-dark" name="gc-form-submit" value="<?php _e('Update settings','gc'); ?>" />
             </div>
 
         </form>
