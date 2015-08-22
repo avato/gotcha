@@ -150,6 +150,7 @@ if ( ! class_exists( 'Gotcha' ) ) :
 			// require_once HOSTKIT_DIR . 'includes/utilities/hk-string.php';
 
 			require_once GOTCHA_DIR . 'includes/gc-functions.php';
+			require_once GOTCHA_DIR . 'includes/class-gc-assets.php';
 			// require_once HOSTKIT_DIR . 'includes/whmcs/hk-whmcs-functions.php';
 			// require_once HOSTKIT_DIR . 'includes/class-hk-ajax.php';
 	
