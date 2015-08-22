@@ -28,25 +28,7 @@ if ( ! class_exists( 'GC_Admin_Settings' ) ) :
 	    }
 
 
-	    public static function save(){
-	    	$settings = get_option('Gotcha');
-	    	$to_save = array('mask-opacity','mask-color','show-register','show-login');
-
-	    	if ( ! isset( $_POST['gc-security'] ) || ! wp_verify_nonce( $_POST['gc-security'], 'gc-admin-actions' ) return;
-
-
-	    	foreach( $to_save as $name){
-
-	    		if isset( $_POST[ $name ] ){
-	    			$settings[$name] = sanitize_text_field( $_POST[ $name ] );
-	    		}
-
-	    	}
-
-	    	flush_rewrite_rules();
-
-	    	update_option( 'Gotcha', $settings );
-	    }
+	   
 
 
 	    /**
@@ -54,10 +36,14 @@ if ( ! class_exists( 'GC_Admin_Settings' ) ) :
 	    */
 	    public static function get_settings_pages() {
 
+	    	print_r($_POST);
+
 
 	    	if ( ! empty( $_POST ) ) {
 				self::save();
 			}
+
+			echo 'hi');
 
 
 	    	$manage_page =  gc_start_class('Admin_Page_Manager');
