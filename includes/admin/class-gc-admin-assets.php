@@ -52,8 +52,6 @@ if ( ! class_exists( 'GC_Admin_Assets' ) ) :
 			if ( in_array( $screen->id, gc_get_screen_ids() ) ) {
 
 
-
-
 				wp_register_script( 'gc_admin', GOTCHA_URL . 'assets/js/gc_admin.js', array( 'jquery', 'wp-color-picker' ), GOTCHA_VERSION );
 
 
