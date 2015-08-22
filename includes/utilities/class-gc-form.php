@@ -282,7 +282,7 @@ if ( ! class_exists( 'GC_Form' ) ) :
                 case 'text'     :    $return = sprintf( 'value="%s" >' , sanitize_text_field( $value ) ); break;
                 case 'hidden'   :    $return = sprintf( 'value="%s" >' , sanitize_text_field( $value ) ); break;
                 case 'textarea' :    $return = sprintf( '> %s </textarea>' , sanitize_text_field( $value ) ); break;
-                case 'checkbox' :    $return = sprintf( '%s >' , checked( 'on', $this->formparts['value'], false ) ); break;
+                case 'checkbox' :    $return = sprintf( '%s value="on" >' , checked( 'on', $this->formparts['value'], false ) ); break;
                 case 'select'   :    $return = sprintf( ' >%s</select>', $this->formatselect() ); break;
                 case 'image'    :    $return = sprintf( ' value="%s" ></section>', sanitize_text_field( $value ) ); break;
                 case 'number'   :    $return = sprintf( 'value="%s" >' , sanitize_text_field( $value ) ); break;
