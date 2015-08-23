@@ -37,7 +37,7 @@ if ( ! class_exists( 'GC_Admin_Menus' ) ) :
 	     public static function save(){
 	    	$settings = get_option('Gotcha');
 	    	$to_save = array('mask-opacity','mask-color','show-register','show-login', 'form-bg', 
-	    					'label-col', 'subm-bg', 'subm-col');
+	    					'label-col', 'subm-bg', 'subm-col', 'input-bg', 'input-col');
 
 	    	if ( ! isset( $_POST['gc-security'] ) || !wp_verify_nonce( $_POST['gc-security'], 'gc-admin-actions' ) ) return;
 

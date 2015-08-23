@@ -63,6 +63,9 @@ if ( ! class_exists( 'GC_Assets' ) ) :
 				$form_bg      = ( isset( $this->settings['form-bg'] )      && $this->check_hex( $this->settings['form-bg'] )    )? $this->settings['form-bg']       : '#ffffff' ;
 				$form_label   = ( isset( $this->settings['label-col'] )    && $this->check_hex( $this->settings['label-col'] )  )? $this->settings['label-col']     : '#000000' ;
 
+				$input_bg      = ( isset( $this->settings['input-bg'] )      && $this->check_hex( $this->settings['input-bg'] )    )? $this->settings['input-bg']   : '#eeeeee' ;
+				$input_col     = ( isset( $this->settings['input-col'] )    && $this->check_hex( $this->settings['input-col'] )  )? $this->settings['input-col']    : '#000000' ;
+
 				$subm_bg      = ( isset( $this->settings['subm-bg'] )      && $this->check_hex( $this->settings['subm-bg'] )    )? $this->settings['subm-bg']       : '#000000' ;
 				$subm_col     = ( isset( $this->settings['subm-col'] )    && $this->check_hex( $this->settings['subm-col'] )  )? $this->settings['subm-col']        : '#ffffff' ;
 				
@@ -71,9 +74,8 @@ if ( ! class_exists( 'GC_Assets' ) ) :
 				return ' .gc-modalbox{background:  ' . $mask_color . ';} 
 						 .gc-login-wrapper{ background: '  .  $form_bg .  ';} 
 						 .gc-login-wrapper label{ color: '  .  $form_label .  ';}
-						 .gc-login-wrapper input[type=submit]{ color: '  .  $subm_col .  ';}
-						 .gc-login-wrapper input[type=submit]{ background: '  .  $subm_bg .  ';}
-						 ' ;
+						 .gc-login-wrapper input[type=submit]{ color: '  .  $subm_col .  '; background: '  .  $subm_bg .  ';}
+						 .gc-login-wrapper input[type=text], .gc-login-wrapper input[type=password]{ color: '  .  $input_col .  ';  background: '  .  $input_bg .  ';}' ;
 		}
 
 

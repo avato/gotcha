@@ -100,6 +100,10 @@ for ($i=0; $i < 11 ; $i++) {
                     <div class="gc-panel-body">
                        <?php echo $set_page->set_color('form-bg',__('Form Bg color','gotcha') ); ?>
                        <?php echo $set_page->set_color('label-col',__('Label color','gotcha') ); ?>
+
+                       <?php echo $set_page->set_color('input-bg',__('Input Bg color','gotcha') ); ?>
+                       <?php echo $set_page->set_color('input-col',__('Input color','gotcha') ); ?>
+
                        <?php echo $set_page->set_color('subm-bg',__('Submit Bg','gotcha') ); ?>
                        <?php echo $set_page->set_color('subm-col',__('Submit color','gotcha') ); ?>
                        <br/>
