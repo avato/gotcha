@@ -10,7 +10,7 @@
  * Plugin Name:      Gotcha
  * Plugin URI:        http://gotcha.ava.to/
  * Description:       Gotcha the modal popup with flair
- * Version:           0.1.1
+ * Version:           0.1.2
  * Author:            Avato
  * Author URI:        http://ava.to
  * License:           GPL-2.0+

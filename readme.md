@@ -12,8 +12,16 @@ Thus I decided to make me own
 ##### Changelog:
 
 
+
+
+###### Version 0.1.2
+Styling of the input and password field in the login form
+
+
 ###### Version 0.1.1
 Admin section added and color selection started
+
+
 
 ###### Version 0.1.0
 project started and basic files styles added.
