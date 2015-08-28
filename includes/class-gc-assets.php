@@ -75,6 +75,8 @@ if ( ! class_exists( 'GC_Assets' ) ) :
 						 .gc-login-wrapper{ background: '  .  $form_bg .  ';} 
 						 .gc-login-wrapper label{ color: '  .  $form_label .  ';}
 						 .gc-login-wrapper input[type=submit]{ color: '  .  $subm_col .  '; background: '  .  $subm_bg .  ';}
+						 .gc-login-wrapper .login-remember .gotcha-radio-beautifier{border: 2px solid '  .  $subm_bg .  ';}
+						 .gc-login-wrapper .login-remember input:checked + span.gotcha-radio-beautifier::before{background: '  .  $form_label .  ';}
 						 .gc-login-wrapper input[type=text], .gc-login-wrapper input[type=password]{ color: '  .  $input_col .  ';  background: '  .  $input_bg .  ';}' ;
 		}
 
