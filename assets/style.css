@@ -61,6 +61,11 @@
 
 .gc-login-wrapper input[type=text]{
 	margin-bottom: 20px;
+	width: 100%;
+}
+
+.gc-login-wrapper input[type=password]{
+	width: 100%;
 }
 
 .gc-login-wrapper .login-submit{
@@ -80,4 +85,36 @@
 
 .gc-login-wrapper input[type=text], .gc-login-wrapper input{
 	border: none;
+}
+
+.gc-login-wrapper .login-remember{
+	position: relative;
+	z-index: 1;
+}
+
+.gc-login-wrapper .login-remember input{
+	position: relative;
+	z-index: 2;
+	visibility: hidden;
+}
+
+.gc-login-wrapper .login-remember .gotcha-radio-beautifier{
+	position: absolute;
+	top: 22px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
+	z-index: 0;
+	cursor: pointer;
+}
+
+.gc-login-wrapper .login-remember input:checked + span.gotcha-radio-beautifier::before{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	content: '';
+	top: 3px;
+	left: 3px;
+
 }
