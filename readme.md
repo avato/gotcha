@@ -14,6 +14,10 @@ Thus I decided to make me own
 
 
 
+###### Version 0.1.3
+styling for the remember me box added.
+
+
 ###### Version 0.1.2
 Styling of the input and password field in the login form
 
